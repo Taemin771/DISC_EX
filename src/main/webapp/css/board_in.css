@@ -1,0 +1,332 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl,
+dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Malgun Gothic","留묒� 怨좊뵓",helvetica,"Apple SD Gothic Neo",sans-serif;
+    text-align: center;
+}
+hr{
+  opacity: 0.3;
+}
+button{
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* �뿤�뜑 */
+
+.page header{
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+
+.page header .btn {
+  background-color:transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#mypage_btn {
+  margin-left: 10px;
+}
+
+.navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 濡쒓퀬 */
+#d_logo {
+  padding-top: 39px;
+}
+
+/* �뱶濡��떎�슫 硫붾돱 */
+
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page_menu {
+  width: 100%;
+  height: 75px;
+  line-height: 50px;
+  margin:0 auto;
+  text-align: center;
+  border-top: 5px solid #00A6DD;
+  border-bottom: 5px solid #00A6DD;
+
+}
+.page_menu ul {
+  width: 100%;
+}
+.page_menu > ul > li {
+    float: left;
+    width:33.33%;
+    margin-top: 10px;
+   }
+.page_menu > ul > li > ul {
+    display: none;
+    background: skyblue;
+    position: absolute;
+    margin-top: 50px;
+    left:0;
+    width: 100%;
+  }
+.navbar_toogleBtn {
+  display: none;
+  position: absolute;
+  top:12px;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+.banner{
+  margin-top: 45px;
+  text-align: center;
+}
+/*寃뚯떆湲� �궡�슜*/
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    width: 100%;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+
+.articleWrap {
+    width : 1320px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.articleWrap .articleInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    padding: 14px 10px 16px;
+    border-bottom: 3px solid black;
+}
+
+.articleWrap .articleInfo .articleWriter{
+  font-size: 20pt;
+}
+.articleWrap .articleInfo .articleDate{
+  font-size: 14pt;
+}
+.articleWrap .articleInfo .articleHit{
+  font-size: 15pt;
+}
+
+.articleWrap .articleMain{
+
+}
+
+.articleWrap .articleMain .articleSubject{
+  display: flex;
+  font-size: 20pt;
+  margin: 0 auto 20px;
+  width: calc(100% - 59px);
+  min-height: 130px;
+}
+.articleWrap .articleSubject .articleTitle {
+    text-align: right;
+    margin: 55px 0 0 0;
+    padding: 0 30px 0 0;
+}
+.articleWrap .contentBody {
+    margin: 0 auto 100px;
+    width: calc(100% - 59px);
+}
+.articleWrap .contentBody > div{
+    text-align: left;
+    font-size: 15pt;
+}
+
+/*寃뚯떆湲� �궡�슜 �걹*/
+
+/*異붿쿇 */
+.btnRecom {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.btnRecom a {
+    display: inline-block;
+    width: fit-content;
+    line-height: 80px;
+    height: auto;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+    position: relative;
+    border: 2px solid #00A6DD;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    overflow: hidden;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+.btnRecom a.btn_good strong {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 10px;
+    height: 18px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.btnRecom a i {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    left: 0;
+    top: 0;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+
+}
+
+
+/* �뙎湲� */
+.articleWrap .ViewRecom {
+    margin: 0px auto 20px !important;
+    width: calc(100% - 59px);
+}
+
+.articleWrap .ViewRecom .botmenuCenter{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+@media screen and (min-width: 820px) {
+  .page_menu > ul > li:hover > ul{
+      display: inline-block;
+    }
+}
+@media screen and (max-width: 820px) {
+  #DISCmain {
+    display: none;
+  }
+  .buttons {
+    z-index: 999;
+    position: fixed;
+    display: none;
+    right: 90px;
+    bottom: 25px;
+  }
+  .btn {
+    overflow: hidden;
+    width: 50px;
+  }
+  .btn img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .navbar {
+    position: relative;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #d_logo {
+    float: none;
+    padding: 13px 0;
+    margin: 0;
+  }
+  .page_menu {
+    z-index: 997;
+    display: none;
+    position: fixed;
+    background-color: #E2FBFF;
+    width: 40vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+  }
+  .page_menu > buttons{
+    text-align: center;
+  }
+  .page_menu > ul {
+    margin-top: 100px;
+    background-color: #E2FBFF;
+    text-align: center;
+  }
+  .page_menu > ul > li {
+    width: 100%;
+    float: none;
+  }
+  .page_menu > ul > li > ul {
+    position: relative;
+    margin: 0;
+  }
+  .page_menu > ul > li:hover {
+    background-color: skyblue;
+  }
+  .navbar_toogleBtn {
+    z-index: 998;
+    display: block;
+    position: fixed;
+  }
+  .page_menu.active,
+  .buttons.active {
+    display: inline-block;
+}
+}

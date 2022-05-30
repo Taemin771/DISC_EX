@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.page-content {
+  width: 100%;
+  height: 100%;
+}
+
+/*백그라운드 / 이미지 영역 */
+
+.page .page-content .img-area {
+}
+.page .page-content .img-area .logo-area img{
+   width: 151px;
+   height: 45px;
+   margin: 10px 0 0 10px ;
+   position: absolute;
+}
+.page .page-content .img-area .DISClogo-area img {
+    width: 845px;
+    height: 475px;
+    margin-top: 80px;
+    margin-left: 50px;
+    position: absolute;
+}
+.page .page-content .img-area .background-img img {
+    position: absolute;
+    object-fit: cover;
+}
+
+
+/* 로그인 영역*/
+
+.page .page-content .login-area{
+  float: right;
+  width: 532px;
+  height: 100%;
+  background-color:rgba(96, 226, 236, 0.5);
+  position: relative;
+}
+.page .page-content .login-area .login-input-id {
+  margin-left: 92px;
+  margin-top: 392px;
+}
+.page .page-content .login-area .login-input-pd {
+  margin-left: 92px;
+}
+.page .page-content .login-area .login-input-id input {
+  width: 348px;
+  height: 51px;
+  margin-bottom: 20px;
+  font-size: 15pt;
+  border-color:rgba(0, 0, 0, 0.0);
+  border-radius: 15px 15px 15px 15px;
+  font-family: sandoll-gothicneo3, sans-serif;
+}
+
+.page .page-content .login-area .login-input-id input::placeholder {
+  padding-left: 10px;
+}
+
+.page .page-content .login-area .login-input-pd input {
+  width: 348px;
+  height: 51px;
+  font-size: 15pt;
+  border-color:rgba(0, 0, 0, 0.0);
+  border-radius: 15px 15px 15px 15px;
+  font-family: sandoll-gothicneo3, sans-serif;
+}
+
+.page .page-content .login-area .login-input-pd input::placeholder {
+  padding-left: 10px;
+}
+.page .page-content .login-area button {
+  background-color:transparent;
+  border-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .page-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(96, 226, 236, 0.5);
+  }
+  .img-area {
+    display: none;
+  }
+  .page .page-content .login-area {
+    width: 100%;
+  }
+  .page .page-content .login-area .login-input-id {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .page .page-content .login-area .login-input-pd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}

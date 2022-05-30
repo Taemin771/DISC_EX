@@ -1,0 +1,99 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+<link rel="stylesheet" href="css/board_in.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2? family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/29d40dd6a7.js" crossorigin="anonymous"></script>
+<script src="jsp/main.js" defer></script>
+
+<body style="overflow-x: hidden">
+  <div class="page">
+ <!-- 헤더.jsp -->
+    <div class="banner">
+      <img src="img\boardbanner.png" alt="배너" align="center">
+    </div>
+
+    <a href="#" class="navbar_toogleBtn">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+    <div class="articleWrap">
+    <!--게시글-->
+    <table cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed; word-wrap: break-word; clear: both;">
+        <tbody>
+          <tr>
+            <td>
+              <div id="tbArticle">
+                <div class="articleHead">
+                  <div class="articleInfo">
+                    <div class="articleWriter">
+                      <h1>글쓴이이름</h1>
+                    </div>
+                    <div class="articleDate">2022-05-03 10:43</div>
+                    <div class="articleHit">
+                      <strong>조회수 :</strong>
+                      5 &nbsp;&nbsp;&nbsp;
+                      <strong>추천 : </strong>
+                      <span id ="recommendNum">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="articleMain">
+                  <div class="articleSubject">
+                    <div class="articleTitle">
+                      <h1>글의 제목입니다.</h1>
+                    </div>
+                  </div>
+                  <div class="articleContent">
+                    <div id="imageCollectDiv" class="contentBody">
+                      <!-- 글내용 시작 -->
+                      <div id="powerbbsContent">
+                        <div>이 구역은 테스트 글 입니다</div>
+                        <div>
+                          <br>
+                          <br>
+                        </div>
+                
+                      <!--글의 끝 -->
+                    </div>
+                    <div class="ViewRecom">
+                      <div class="botmenuCenter">
+                        <div class="btnRecom">
+                         <a href="http://www.webpaper.kr/2019/bbs/good.php?bo_table=webpaper&wr_id=120&good=good&&page=1" id="good_button" class="btn_good">
+                           <i class="fa-solid fa-heart"></i>
+                           추천
+                           <strong>1</strong>
+                        </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    <!--댓글-->
+    <table cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed; word-wrap: break-word; clear: both;">
+      <tbody>
+        <tr>
+          <td>
+            <div id="pwrbbsCmt2">
+              <div class="cmtWrap">
+                <div class="cmtHead">
+                 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</body>
+
+</html>

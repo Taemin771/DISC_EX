@@ -1,0 +1,304 @@
+@font-face {
+  src:url("..\font\NotoSansKR-Black.otf");
+  font-family: noto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+hr{
+  background-color:red;
+}
+button{
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.page{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* 헤더 */
+
+.page header{
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+
+.page header .btn {
+  background-color:transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#mypage_btn {
+  margin-left: 10px;
+}
+
+.navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* 로고 */
+#d_logo {
+  padding-top: 39px;
+}
+/* #d_logo {
+  margin-left: 330px;
+  padding-top: 39px;
+  position: absolute;
+}
+
+#DISCmain{
+  margin-left: 800px;
+  position: absolute;
+  margin-bottom: 60px;
+}
+#latter_btn{
+  margin-right: 65px;
+  margin-left: 20px;
+} */
+
+
+/* 드롭다운 메뉴 */
+
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: noto;
+}
+
+.page_menu {
+  width: 100%;
+  height: 75px;
+  line-height: 50px;
+  margin:0 auto;
+  text-align: center;
+  border-top: 5px solid #00A6DD;
+  border-bottom: 5px solid #00A6DD;
+
+}
+.page_menu ul {
+  width: 100%;
+}
+.page_menu > ul > li {
+    float: left;
+    width:33.33%;
+    margin-top: 10px;
+    font-size: 15pt;
+   }
+.page_menu > ul > li > button{
+   font-size: 20pt;
+  }
+.page_menu > ul > li > ul {
+    display: none;
+    background: skyblue;
+    position: absolute;
+    margin-top: 50px;
+    left:0;
+    width: 100%;
+  }
+.button {
+  width: 100%;
+  height: 50px;
+}
+/* 컨테이너 */
+
+#container {
+  margin-top: 45px;
+  width: 90%;
+  display: inline-block;
+}
+
+/* 중앙 배너 */
+
+.banner {
+  margin-top: 45px;
+  margin-bottom: 10px;
+  width: 90%;
+  display: inline-block;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+.banner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 게시판 */
+
+
+#container > div.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 20PX;
+    overflow: auto;
+}
+#container > div.main div.horizon_board {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: auto;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#container > div.main div.card{
+  width: 47%;
+  height: auto;
+  float: left;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+  background-color: #fff
+}
+#container div.card > div.board > a {
+    display: block;
+    padding: 20px;
+    border-top: 1px solid #e3e3e3;
+}
+#container div.card > div.board > img {
+  padding: 17px;
+}
+#container div.card > div.board > a.title {
+  background-color: #e2fbff;
+}
+#container div.card > div.board > a.list{
+  text-align: left;
+  margin: 0 auto;
+}
+#container div.card > div.board > a.list > time {
+    float: right;
+    margin-left: 10px;
+    height: 17px;
+    line-height: 18px;
+    color: #a6a6a6;
+    font-size: 11px;
+    letter-spacing: 0;
+}
+#container div.card > div.board > a.list > p {
+    height: 100%;
+    line-height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #444444;
+    font-size: 20px;
+    display: inline-block;
+}
+.navbar_toogleBtn {
+  display: none;
+  position: absolute;
+  top:12px;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+
+@media screen and (min-width: 820px) {
+  .page_menu > ul > li:hover > ul{
+      display: inline-block;
+    }
+}
+
+@media screen and (max-width: 820px) {
+  #DISCmain {
+    display: none;
+  }
+  .buttons {
+    z-index: 999;
+    position: fixed;
+    display: none;
+    right: 90px;
+    bottom: 25px;
+  }
+  .btn {
+    overflow: hidden;
+    width: 50px;
+  }
+  .btn img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .navbar {
+    position: relative;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #d_logo {
+    float: none;
+    padding: 13px 0;
+    margin: 0;
+  }
+  .banner {
+    display: none;
+  }
+  .page_menu {
+    z-index: 997;
+    display: none;
+    position: fixed;
+    background-color: #E2FBFF;
+    width: 40vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+  }
+  .page_menu > buttons{
+    text-align: center;
+  }
+  .page_menu > ul {
+    margin-top: 100px;
+    background-color: #E2FBFF;
+    text-align: center;
+  }
+  .page_menu > ul > li {
+    width: 100%;
+    float: none;
+  }
+  .page_menu > ul > li > ul {
+    position: relative;
+    margin: 0;
+  }
+  .page_menu > ul > li:hover {
+    background-color: skyblue;
+  }
+  .navbar_toogleBtn {
+    z-index: 998;
+    display: block;
+    position: fixed;
+  }
+  .page_menu.active,
+  .buttons.active {
+    display: inline-block;
+  }
+}
